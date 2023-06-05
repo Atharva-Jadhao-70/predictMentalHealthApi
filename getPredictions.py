@@ -5,12 +5,12 @@
 
 
 from flask import Flask, request, jsonify
-from flask_ngrok import run_with_ngrok
+#from flask_ngrok import run_with_ngrok
 import joblib
 
 app = Flask(__name__)
 
-run_with_ngrok(app)
+#run_with_ngrok(app)
 
 # Load the trained machine learning model
 model_depress = joblib.load('model_depress.pkl')
